@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Aluno {
 
-    static final int MIN_AULAS_TEORICAS = 5;
-    static final int MIN_AULAS_PRATICAS = 5;
+    private static final int MIN_AULAS_TEORICAS = 5;
+    private static final int MIN_AULAS_PRATICAS = 5;
 
     public Long id;
 
