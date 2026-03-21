@@ -6,7 +6,7 @@ public class Instrutor {
 
     public String nome;
 
-    public String experiencia;
+    public int experiencia;
 
     public String categoria;
 
