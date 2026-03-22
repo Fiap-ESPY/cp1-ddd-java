@@ -66,7 +66,7 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
 
 
 4. **Diagrama de Classes:**
-   e quiséssemos adicionar um novo tipo de veículo, como uma bicicleta elétrica, o que
+   Se quiséssemos adicionar um novo tipo de veículo, como uma bicicleta elétrica, o que
    precisaríamos mudar no diagrama de classes? Explique sua resposta.
 
     > No diagrama não realizaríamos alterações, pois para criar uma bicicleta elétrica, instanciamos esse novo objeto preenchendo os dados como id, tipo, modelo e mantemos a placa como null ou não preenchido.
