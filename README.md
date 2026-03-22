@@ -37,7 +37,7 @@ Criamos um sistema de autoescola capaz de:
 
 O Diagrama UML (Unified Modeling Language) criado é uma representação visual padronizada para modelar a estrutura, comportamento e interações do nosso sistema.
 
-![Diagrama UML](assets/diagrama.jpeg)
+![Diagrama UML](assets/diagrama_UML.png)
 
 ## Parte 3 - Perguntas Discursivas
 

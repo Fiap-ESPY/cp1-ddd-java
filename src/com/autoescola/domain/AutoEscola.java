@@ -1,6 +1,10 @@
 package com.autoescola.domain;
 
+import java.util.Random;
+
 public class AutoEscola {
+
+    private final Long id = Math.abs(new Random().nextLong());
 
     private Aluno aluno1;
 
@@ -9,6 +13,10 @@ public class AutoEscola {
     private Aluno aluno3;
 
     private Aluno aluno4;
+
+    public Long getId() {
+        return id;
+    }
 
     public Aluno getAluno1() {
         return aluno1;
@@ -55,16 +63,16 @@ public class AutoEscola {
                 
                 ================================
                 """.formatted(
-                exibirAlunoResumo(aluno1, 1),
-                exibirAlunoResumo(aluno2, 2),
-                exibirAlunoResumo(aluno3, 3),
-                exibirAlunoResumo(aluno4, 4)
+                getAlunoResumo(aluno1, 1),
+                getAlunoResumo(aluno2, 2),
+                getAlunoResumo(aluno3, 3),
+                getAlunoResumo(aluno4, 4)
         );
 
         System.out.println(resumo);
     }
 
-    public String exibirAlunoResumo(Aluno aluno, int numeroAluno) {
+    private String getAlunoResumo(Aluno aluno, int numeroAluno) {
         if (aluno == null) {
             return """
                     Aluno %s não cadastrado.
