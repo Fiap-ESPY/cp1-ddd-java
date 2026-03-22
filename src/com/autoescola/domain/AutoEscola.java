@@ -84,7 +84,7 @@ public class AutoEscola {
                 numeroAluno,
                 aluno.getNome(),
                 totalAulas,
-                aluno.isAprovado() ? "APROVADO" : "REPROVADO"
+                aluno.isAprovado() ? "APROVADO" : "NÃO APROVADO"
         );
     }
 }
