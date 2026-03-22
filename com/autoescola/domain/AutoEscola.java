@@ -2,10 +2,10 @@ package com.autoescola.domain;
 
 public class AutoEscola {
 
-    public Aluno aluno1 = new Aluno();
-    public Aluno aluno2 = new Aluno();
-    public Aluno aluno3 = new Aluno();
-    public Aluno aluno4 = new Aluno();
+    public Aluno aluno1;
+    public Aluno aluno2;
+    public Aluno aluno3;
+    public Aluno aluno4;
 
     public String exibirResumo() {
         return """
