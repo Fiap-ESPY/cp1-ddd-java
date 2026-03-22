@@ -51,7 +51,7 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
 
 2. **Funcionamento do Objeto**
    No método Main, criamos objetos da classe Aluno e chamamos métodos como
-   agendarAulaPratica() e cancelarAulaTeorica().
+   **agendarAulaPratica()** e **cancelarAulaTeorica()**.
    Explique:
    
    A) O que acontece no programa quando executamos a instrução:
@@ -65,7 +65,7 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
 
 
 3. **Lógica do sistema:**
-   No seu código, como o método realizarExame() funciona? O que ele verifica antes de determinar
+   No seu código, como o método **realizarExame()** funciona? O que ele verifica antes de determinar
    se o aluno foi aprovado ou não?
 
     > No método realizarExame, é primeiramente verificado se o aluno tem o número mínimo de aulas práticas e teóricas realizadas,
@@ -79,7 +79,9 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
    Se quiséssemos adicionar um novo tipo de veículo, como uma bicicleta elétrica, o que
    precisaríamos mudar no diagrama de classes? Explique sua resposta.
 
-    > No diagrama não realizaríamos alterações, pois para criar uma bicicleta elétrica, instanciamos esse novo objeto preenchendo os dados como id, tipo, modelo e mantemos a placa como null ou não preenchido.
+    > No diagrama de classes, não seriam necessárias mudanças estruturais na classe Veiculo, pois ela já possui os atributos necessários (id, tipo, placa e modelo) para representar uma bicicleta elétrica.
+   > No entanto, para que o sistema aceite esse novo objeto, precisaríamos atualizar a lógica interna do método setTipo(). 
+   > <br><br> Atualmente, esse método possui uma lista fixa que permite apenas 'Carro' e 'Moto'. Para incluir a bicicleta elétrica, bastaria adicionar 'Bicicleta Elétrica' à lista de tipos válidos no código, sem alterar a estrutura visual do diagrama.
     
 
 
