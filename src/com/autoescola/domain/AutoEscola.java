@@ -42,8 +42,8 @@ public class AutoEscola {
         this.aluno4 = aluno4;
     }
 
-    public String exibirResumo() {
-        return """
+    public void exibirResumo() {
+        String resumo = """
                 ================================
                        RESUMO DA AUTOESCOLA
                 ================================
@@ -60,6 +60,8 @@ public class AutoEscola {
                 exibirAlunoResumo(aluno3, 3),
                 exibirAlunoResumo(aluno4, 4)
         );
+
+        System.out.println(resumo);
     }
 
     public String exibirAlunoResumo(Aluno aluno, int numeroAluno) {
@@ -84,7 +86,7 @@ public class AutoEscola {
                 numeroAluno,
                 aluno.getNome(),
                 totalAulas,
-                aluno.isAprovado() ? "APROVADO" : "REPROVADO"
+                aluno.isAprovado() ? "APROVADO" : "NÃO APROVADO"
         );
     }
 }

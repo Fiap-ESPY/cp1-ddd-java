@@ -30,6 +30,11 @@ public class Instrutor {
     }
 
     public void setExperiencia(int experiencia) {
+        if (experiencia < 0 || experiencia > 100) {
+            System.out.println("Experiência inválida. A experiência deve ser um número entre 0 e 100.");
+            return;
+        }
+
         this.experiencia = experiencia;
     }
 
