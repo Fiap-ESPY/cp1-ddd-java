@@ -27,7 +27,7 @@ Criamos um sistema de autoescola capaz de:
 
 O Diagrama UML (Unified Modeling Language) criado é uma representação visual padronizada para modelar a estrutura, comportamento e interações do nosso sistema.
 
-![diagrama.jpeg](../assets/diagrama.jpeg)
+![Diagrama UML](assets/diagrama.jpeg)
 
 ## Parte 3 - Perguntas Discursivas
 
@@ -58,9 +58,11 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
    No seu código, como o método realizarExame() funciona? O que ele verifica antes de determinar
    se o aluno foi aprovado ou não?
 
-    > O método realizarExame() primeiro cria uma variável local chamada podeRealizarExame, que recebe um retorno do tipo boolean utilizando verificações dos requsitos mínimos para o exame.
-    Se essa variável receber algo diferente de true, haverá uma mensagem da negativa, mas, caso seja true será uma mensagem de afirmação. 
-    A mensagem de aprovação leva em consideração o retorno do método gerarResultadoExame(), que assim como o método realizarExame exibe mensagens diferentes em casos de true ou false.
+    > No método realizarExame, é primeiramente verificado se o aluno tem o número mínimo de aulas práticas e teóricas realizadas,
+   utilizando os métodos possuiAulasTeoricasParaExame e possuiAulasPraticasParaExame, dentro da mesma classe.
+   Caso não tenha, é exibida uma mensagem informando que ele não atende aos requisitos mínimos e o exame não é realizado.
+   Caso tenha, o resultado é gerado aleatoriamente, com o método gerarResultadoExame, exibindo mensagens de aprovação ou reprovação.
+
 
 
 4. **Diagrama de Classes:**
