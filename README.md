@@ -35,7 +35,7 @@ O Diagrama UML (Unified Modeling Language) criado é uma representação visual 
    Explique a diferença entre classe e objeto utilizando um exemplo do sistema desenvolvido (Aluno,
    Instrutor, Veículo ou AutoEscola).
 
-    A principal diferença é que a classe possui consigo um modelo lógico, já o objeto é instânciado a partir dessa classe, possuindo suas características e adicionando dados. 
+    >A principal diferença é que a classe possui consigo um modelo lógico, já o objeto é instânciado a partir dessa classe, possuindo suas características e adicionando dados. 
     Um exemplo em nosso sistema é a Classe Aluno, onde ali criamos os atributos e os métodos (a parte lógica) que utilizamos para criar objetos com as informações dos alunos na classe Main.
 
 
