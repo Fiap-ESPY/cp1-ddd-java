@@ -1,5 +1,6 @@
 package com.autoescola.domain;
 
+import java.util.List;
 import java.util.Random;
 
 public class Aluno {
@@ -7,19 +8,70 @@ public class Aluno {
     private static final int MIN_AULAS_TEORICAS = 5;
     private static final int MIN_AULAS_PRATICAS = 5;
 
-    public Long id;
+    private final Long id = Math.abs(new Random().nextLong());
 
-    public String nome;
+    private String nome;
 
-    public int idade;
+    private int idade;
 
-    public String tipoVeiculo;
+    private String tipoVeiculo;
 
-    public int aulasTeoricas = 0;
+    private int aulasTeoricas = 0;
 
-    public int aulasPraticas = 0;
+    private int aulasPraticas = 0;
 
-    public boolean aprovado = false;
+    private boolean aprovado = false;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getTipoVeiculo() {
+        return tipoVeiculo;
+    }
+
+    public void setTipoVeiculo(String tipoVeiculo) {
+        List<String> tiposValidos = List.of("Carro", "Moto");
+
+        if (!tiposValidos.contains(tipoVeiculo)) {
+            System.out.println("Tipo de veículo inválido. Os tipos válidos são: " + tiposValidos);
+            return;
+        }
+
+        this.tipoVeiculo = tipoVeiculo;
+    }
+
+    public int getAulasTeoricas() {
+        return aulasTeoricas;
+    }
+
+    public int getAulasPraticas() {
+        return aulasPraticas;
+    }
+
+    public boolean isAprovado() {
+        return aprovado;
+    }
+
+    public void setAprovado(boolean aprovado) {
+        this.aprovado = aprovado;
+    }
 
     @Override
     public String toString() {
@@ -40,13 +92,13 @@ public class Aluno {
                 """;
 
         return resumo.formatted(
-                id,
-                nome,
-                idade,
-                tipoVeiculo,
-                aulasTeoricas,
-                aulasPraticas,
-                aprovado ? "APROVADO" : "NAO_APROVADO"
+                this.id,
+                this.nome,
+                this.idade,
+                this.tipoVeiculo,
+                this.aulasTeoricas,
+                this.aulasPraticas,
+                this.aprovado ? "APROVADO" : "NAO_APROVADO"
         );
     }
 

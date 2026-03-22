@@ -11,6 +11,16 @@ Projeto desenvolvido para a disciplina de **Domain Driven Design** da **FIAP**, 
 - Gabriel Augusto — 564126
 - Davi de Jesus — 566316
 
+## ⚙Configuração do Ambiente (Java 21)
+
+Este projeto utiliza recursos do **Java 21 LTS**.
+
+### SDKMAN!
+O projeto inclui um arquivo `.sdkmanrc`. Para configurar a versão correta, utilize:
+```bash
+sdk env
+```
+
 ## Parte 1 - Codificação
 
 Criamos um sistema de autoescola capaz de:
