@@ -43,7 +43,7 @@ public class AutoEscola {
     }
 
     public void exibirResumo() {
-        var resumo = """
+        String resumo = """
                 ================================
                        RESUMO DA AUTOESCOLA
                 ================================

@@ -69,10 +69,6 @@ public class Aluno {
         return aprovado;
     }
 
-    public void setAprovado(boolean aprovado) {
-        this.aprovado = aprovado;
-    }
-
     @Override
     public String toString() {
         String resumo = """

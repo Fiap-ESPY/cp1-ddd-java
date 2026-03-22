@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         //region Veículo
 
-        var veiculo1 = new Veiculo();
+        Veiculo veiculo1 = new Veiculo();
         veiculo1.setTipo("Carro");
         veiculo1.setPlaca("ABC-1234");
         veiculo1.setModelo("Sedan");
@@ -26,7 +26,7 @@ public class Main {
 
         //region Instrutor
 
-        var instrutor1 = new Instrutor();
+        Instrutor instrutor1 = new Instrutor();
         instrutor1.setNome("Damiana Costa");
         instrutor1.setCategoria("Carro");
         instrutor1.setExperiencia(15);
@@ -50,7 +50,7 @@ public class Main {
 
         //region Aluno
 
-        var aluno1 = new Aluno();
+        Aluno aluno1 = new Aluno();
         aluno1.setNome("Harry Potter");
         aluno1.setIdade(17);
         aluno1.setTipoVeiculo("Carro");
@@ -96,7 +96,7 @@ public class Main {
         // o aluno pode realizar o exame e obter um resultado de aprovação ou reprovação
         aluno1.realizarExame();
 
-        var aluno2 = new Aluno();
+        Aluno aluno2 = new Aluno();
         aluno2.setNome("Hermione Granger");
         aluno2.setIdade(18);
         aluno2.setTipoVeiculo("Moto");
@@ -110,7 +110,7 @@ public class Main {
         aluno2.agendarAulaTeorica();
         aluno2.agendarAulaTeorica();
 
-        var aluno3 = new Aluno();
+        Aluno aluno3 = new Aluno();
         aluno3.setNome("Ron Weasley");
         aluno3.setIdade(19);
         aluno3.setTipoVeiculo("Carro");
@@ -121,7 +121,7 @@ public class Main {
         aluno3.agendarAulaTeorica();
         aluno3.agendarAulaTeorica();
 
-        var aluno4 = new Aluno();
+        Aluno aluno4 = new Aluno();
         aluno4.setNome("Tom Riddle");
         aluno4.setIdade(71);
         aluno4.setTipoVeiculo("Carro");
@@ -134,7 +134,7 @@ public class Main {
 
         //region AutoEscola
 
-        var autoEscola = new AutoEscola();
+        AutoEscola autoEscola = new AutoEscola();
         autoEscola.setAluno1(aluno1);
         autoEscola.setAluno2(aluno2);
         autoEscola.setAluno3(aluno3);
